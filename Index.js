@@ -1,17 +1,28 @@
+//Compilar utilizando NODEMON INDEX.JS .... 
+
 let express = require('express');
 let app = express();
 
+app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-    res.send("<html><body>Portal de noticias</body></html>");
+    res.render("home/index");
+})
+
+app.get('/formulario_inclusao_noticias', function(req, res){
+    res.render("admin/form_add_noticia");
+})
+
+app.get('/noticias', function(req, res){
+    res.render("noticias/noticias");
 })
 
 app.get('/tecnologia', function(req, res){
-    res.send("<html><body>Portal de tecnologia</body></html>");
+    res.render("secao/tecnologia");
 })
 
 app.get('/Moda', function(req, res){
-    res.send("<html><body>Portal de Moda</body></html>");
+    res.render("secao/moda");
 })
 
 
