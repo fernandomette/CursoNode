@@ -1,4 +1,15 @@
-//Compilar utilizando NODEMON INDEX.JS .... 
+/**
+Instalar pacote express
+npm install express --save
+
+Instalar pacote ejs
+npm install ejs --save
+  
+Instalar nodemon
+npm
+Compilar utilizando NODEMON INDEX.JS .... 
+npm install -g nodemon
+*/
 
 let express = require('express');
 let app = express();
