@@ -6,7 +6,7 @@ module.exports = function (app) {
         let connection = mysql.createConnection({
             host : 'localhost',
             user : 'root',
-            password : 'jehh8494',
+            password : '******',
             database : 'porta_noticias'
         });
         connection.query('select * from noticia', function(erro, result){
